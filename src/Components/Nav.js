@@ -12,7 +12,6 @@ export default function Nav() {
                 <li>Login</li>
             </ul>
         </nav>
-        
     )
-} 
+}
 
