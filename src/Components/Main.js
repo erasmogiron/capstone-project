@@ -1,8 +1,9 @@
 import React from "react";
 import DeliveryIcon from '../images/delivery-icon.png';
 import GreekSaladImg from '../images/greek-salad.jpg';
-import BruchettaImg from '../images/bruchetta.jpg';
+import BruschettaImg from '../images/bruschetta.jpg';
 import LemonDessertImg from '../images/lemon-dessert.jpg';
+import {NavLink} from "react-router-dom";
 
 export default function Main() {
     return(
@@ -25,7 +26,7 @@ export default function Main() {
                         </div>
                     </article>
                     <article className="card">
-                        <img src={BruchettaImg} alt="Bruschetta"/>
+                        <img src={BruschettaImg} alt="Bruschetta"/>
                         <div className="card-description">
                             <h3 className="section-categories">Bruschetta <span className="price">$5.99</span></h3>
                             <p>Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil. </p>
