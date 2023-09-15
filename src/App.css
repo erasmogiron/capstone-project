@@ -19,7 +19,7 @@ img {
   max-width: 100%;
 }
 .row {
-  padding: 50px 0;
+  padding: 48px 0;
   margin: 0 20px;
 }
 .full-container {
@@ -57,31 +57,6 @@ footer a:hover {
 }
 
 /* Flex and Grid */
-@media (min-width: 767px) {
-  .flex {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .grid {
-    display: grid;
-    align-items: top;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
-  .container {
-    max-width: 894px;
-    margin: 0 auto;
-  }
-  .display-title,
-  h1 {
-    font-size: 64px;
-  }
-  .sub-title,
-  .h2 {
-    font-size: 40px;
-  }
-}
 .grid {
   display: grid;
   gap: 32px 20px;
@@ -92,7 +67,7 @@ footer a:hover {
 }
 .display-title,
 h1 {
-  font-size: 40px;
+  font-size: 48px;
 }
 .display-title,
 h1,
@@ -144,7 +119,6 @@ h1,
 .hero h2 {
   margin-top: -20px;
   font-family: "Markazi Text";
-  font-size: 40px;
 }
 .hero p {
   font-size: 18px;
@@ -271,4 +245,31 @@ form p {
 .offset {
   position: relative;
   bottom: -110px;
+}
+
+/* Queries */
+@media screen and (min-width: 767px) {
+  .flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .grid {
+    display: grid;
+    align-items: top;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  .container {
+    max-width: 894px;
+    margin: 0 auto;
+  }
+  .display-title,
+  h1 {
+    font-size: 64px;
+  }
+  .sub-title,
+  .h2 {
+    font-size: 40px;
+  }
 }
