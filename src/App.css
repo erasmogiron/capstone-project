@@ -37,6 +37,7 @@ ul li:last-child {
 .primary-navigation ul li a {
   color: #000;
   text-decoration: none;
+  text-transform: uppercase;
 }
 .primary-navigation li a:hover {
   color: #495E57;
@@ -89,7 +90,7 @@ h1,
 }
 .lead-text {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
 }
 .section-title {
   font-size: 20px;
@@ -189,11 +190,10 @@ h1,
 .primary-button {
   display: inline-block;
   background-color: #F4CE14;
-  padding: 16px 45px;
-  border-radius: 16px;
-}
-.primary-button {
   color: #000;
+  padding: 16px 45px;
+  border: 0;
+  border-radius: 16px;
   text-decoration: none;
 }
 .primary-button:hover {

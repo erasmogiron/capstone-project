@@ -16,25 +16,25 @@ export default function Footer() {
                         3325 N Southport Ave<br />
                         Chicago, Illinois 60657
                         </address>
-                        <tel>(555) 555-4321</tel>
+                        <a href="tel:5555554321">(555) 555-4321</a>
                     </div>
                     <div className="col social-media">
                         <ul>
-                        <li><a href="#"><img src={FacebookSocial} alt=""/> Facebook</a></li>
-                        <li><a href="#"><img src={InstagramSocial} alt=""/> Instagram</a></li>
-                        <li><a href="#"><img src={TwitterSocial} alt=""/> Twitter</a></li>
-                        <li><a href="#"><img src={YouTubeSocial} alt=""/> YouTube</a></li>
+                            <li><a href="/"><img src={FacebookSocial} alt=""/> Facebook</a></li>
+                            <li><a href="/"><img src={InstagramSocial} alt=""/> Instagram</a></li>
+                            <li><a href="/"><img src={TwitterSocial} alt=""/> Twitter</a></li>
+                            <li><a href="/"><img src={YouTubeSocial} alt=""/> YouTube</a></li>
                         </ul>
                     </div>
                     <div className="col footer-nav">
-                        <nav role="footer-navigation">
+                        <nav role="navigation">
                             <ul className="secondary-navigation">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Menu</a></li>
-                                <li><a href="#">Reservations</a></li>
-                                <li><a href="#">Order Online</a></li>
-                                <li><a href="#">Login</a></li>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/">About</a></li>
+                                <li><a href="/">Menu</a></li>
+                                <li><a href="/">Reservations</a></li>
+                                <li><a href="/">Order Online</a></li>
+                                <li><a href="/">Login</a></li>
                             </ul>
                         </nav>
                     </div>

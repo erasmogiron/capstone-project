@@ -10,7 +10,7 @@ export default function Hero() {
                         <h1 className="primary display-title">Little Lemon</h1>
                         <h2 className="sub-title">Chicago</h2>
                         <p className="lead-text">We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-                        <a href="#" role="button" className="primary-button lead-text">Reserve a Table</a>
+                        <a href="/" className="primary-button lead-text">Reserve a Table</a>
                     </div>
                         <img src={HeroImage} alt="" className="round offset"/>
                 </div>
