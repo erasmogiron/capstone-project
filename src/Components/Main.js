@@ -7,12 +7,15 @@ import LemonDessertImg from '../images/lemon-dessert.jpg';
 export default function Main() {
     return(
         <main>
-            <header className="container flex">
-                <h2 className="display-title">This Weeks Specials!</h2>
-                <a href="#" role="button" className="primary-button lead-text">Online Menu</a>
+            <header className="container">
+                <div className="row flex">
+                    <h2 className="display-title">This Weeks Specials!</h2>
+                    <a href="#" role="button" className="primary-button lead-text">Online Menu</a>
+                </div>
             </header>
             <section className="container">
-                <div className="row grid">
+                <div className="row">
+                <div className="grid">
                     <article className="card">
                         <img src={GreekSaladImg} alt=""/>
                         <div className="card-description">
@@ -37,6 +40,7 @@ export default function Main() {
                             <a href="#" role="button" className="lead-text secondary-button">Order a delivery <img src={DeliveryIcon} className="delivery-icon"/></a>
                         </div>
                     </article>
+                </div>
                 </div>
             </section>
         </main>
