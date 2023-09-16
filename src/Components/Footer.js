@@ -4,6 +4,7 @@ import FacebookSocial from '../images/facebook.png';
 import InstagramSocial from '../images/instagram.png';
 import TwitterSocial from '../images/twitter.png';
 import YouTubeSocial from '../images/youtube.png';
+import {NavLink} from "react-router-dom";
 
 export default function Footer() {
     return(
@@ -20,21 +21,21 @@ export default function Footer() {
                     </div>
                     <div className="col social-media">
                         <ul>
-                            <li><a href="/"><img src={FacebookSocial} alt=""/> Facebook</a></li>
-                            <li><a href="/"><img src={InstagramSocial} alt=""/> Instagram</a></li>
-                            <li><a href="/"><img src={TwitterSocial} alt=""/> Twitter</a></li>
-                            <li><a href="/"><img src={YouTubeSocial} alt=""/> YouTube</a></li>
+                            <li><a href="https://www.facebook.com/" target="_blank"><img src={FacebookSocial} alt=""/> Facebook</a></li>
+                            <li><a href="https://www.instagram.com/" target="_blank"><img src={InstagramSocial} alt=""/> Instagram</a></li>
+                            <li><a href="https://www.twitter.com/" target="_blank"><img src={TwitterSocial} alt=""/> Twitter</a></li>
+                            <li><a href="https://www.youtube.com/" target="_blank"><img src={YouTubeSocial} alt=""/> YouTube</a></li>
                         </ul>
                     </div>
                     <div className="col footer-nav">
                         <nav role="navigation">
                             <ul className="secondary-navigation">
-                                <li><a href="/">Home</a></li>
-                                <li><a href="/">About</a></li>
-                                <li><a href="/">Menu</a></li>
-                                <li><a href="/">Reservations</a></li>
-                                <li><a href="/">Order Online</a></li>
-                                <li><a href="/">Login</a></li>
+                                <li><NavLink to="/" className="nav-item">Home</NavLink></li>
+                                <li><NavLink to="/about" className="nav-item">About</NavLink></li>
+                                <li><NavLink to="/menu" className="nav-item">Menu</NavLink></li>
+                                <li><NavLink to="/reservations" className="nav-item">Reservations</NavLink></li>
+                                <li><NavLink to="/order-online" className="nav-item">Order Online</NavLink></li>
+                                <li><NavLink to="/login" className="nav-item">Login</NavLink></li>
                             </ul>
                         </nav>
                     </div>

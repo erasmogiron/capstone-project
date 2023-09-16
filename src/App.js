@@ -5,12 +5,11 @@ import MenuPage from './MenuPage';
 import OrderOnlinePage from './OrderOnlinePage';
 import ReservationsPage from './ReservationsPage';
 import LoginPage from './LoginPage';
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {Routes, Route} from "react-router-dom";
 
 function App() {
   return (
 <div className='wrapper'>
-    <BrowserRouter>
         <Routes>
             <Route path="/" element={<HomePage />}></Route>
             <Route path="/about" element={<OurStoryPage />}></Route>
@@ -19,9 +18,7 @@ function App() {
             <Route path="/order-online" element={<OrderOnlinePage />}></Route>
             <Route path="/login" element={<LoginPage />}></Route>
         </Routes>
-      </BrowserRouter>
     </div>
-    
   );
 }
 

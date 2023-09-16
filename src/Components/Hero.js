@@ -1,5 +1,6 @@
 import React from "react";
 import HeroImage from '../images/hero-image.jpg';
+import {Link} from "react-router-dom";
 
 export default function Hero() {
     return (
@@ -10,7 +11,7 @@ export default function Hero() {
                         <h1 className="primary display-title">Little Lemon</h1>
                         <h2 className="sub-title">Chicago</h2>
                         <p className="lead-text">We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-                        <a href="/" className="primary-button lead-text">Reserve a Table</a>
+                        <Link to="/reservations" className="nav-item lead-text primary-button">Reserve a Table</Link>
                     </div>
                         <img src={HeroImage} alt="" className="round offset"/>
                 </div>
