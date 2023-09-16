@@ -262,7 +262,13 @@ form p {
   .grid {
     display: grid;
     align-items: top;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .testimonial-grid {
+    display: grid;
+    align-items: top;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 32px 22px;
   }
   .container {
     max-width: 894px;

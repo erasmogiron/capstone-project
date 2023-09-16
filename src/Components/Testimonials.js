@@ -11,7 +11,7 @@ export default function Testimonials() {
         <section className="full-container testimonials">
             <h2 className="sub-title">Testimonials</h2>
             <div className="container">
-                <div className="row grid">
+                <div className="row testimonial-grid">
                     <article className="col testimonial tan">
                         <p className="testimonial--rating">Rating <img src={FiveStars} alt="" className="star-rating"/></p>
                         <div className="testimonial--author">
