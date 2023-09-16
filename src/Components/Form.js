@@ -9,12 +9,12 @@ export default function Form() {
                 <form>
                     <fieldset className="sub-title">Reservation Details</fieldset>
                     <p><label for="date">Date</label>
-                    <input id="date" type="date" /></p>
+                    <input id="date" type="date" name="date" /></p>
                     <p><label for="time">Time</label>
-                    <input id="time" type="time" /></p>
+                    <input id="time" type="time" name="time" /></p>
 
                     <p><label for="guests">Guests</label>
-                    <input id="guests" type="number" /></p>
+                    <input id="guests" type="number" name="guests"/></p>
 
                     <p><label for="seating">Seating</label>
                     <select id="seating" name="seating">
@@ -33,24 +33,24 @@ export default function Form() {
 
                     <fieldset className="sub-title">About You</fieldset>
                     <p><label for="first-name">First Name</label>
-                    <input id="first-name" type="text" /></p>
+                    <input id="first-name" type="text" name="first-name" /></p>
                     <p><label for="last-name">Last Name</label>
-                    <input id="last-name" type="text" /></p>
+                    <input id="last-name" type="text" name="last-name" /></p>
                     <p><label for="email">Email</label>
                     <input id="email" type="email" /></p>
                     <p><label for="phone">Phone<br/>(optional)</label>
-                    <input id="phone" type="tel" /></p>
+                    <input id="phone" type="tel" name="phone" /></p>
 
                     <fieldset className="sub-title">Payment Info</fieldset>
                     <p><label for="name-on-card">Name on Card</label>
-                    <input id="name-on-card" type="text" /></p>
+                    <input id="name-on-card" type="text" name="name-on-card" /></p>
                     <p><label for="credit-card">Credit card number</label>
                     <input type="text" id="credit-card" name="credit-card" placeholder="1111-2222-3333-4444" /></p>
                     <p><label for="cvv-code">CVV Code</label>
-                    <input id="cvv-code" type="text" /></p>
+                    <input id="cvv-code" type="text" name="cvv-code" /></p>
 
                     <p><label for="expiration-date">Expiration Date</label>
-                    <input type="text" id="expyear" name="expyear" placeholder="11/25" /></p>
+                    <input type="text" id="expiration-date" name="expiration-date" placeholder="11/25" /></p>
                     <p><input type="submit" value="Submit" /></p>
 
                 </form>
