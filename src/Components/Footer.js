@@ -18,6 +18,9 @@ export default function Footer() {
                         Chicago, Illinois 60657
                         </address>
                         <a href="tel:5555554321">(555) 555-4321</a>
+                        <h4>Hours</h4>
+                        <p>M-F 10am-9pm<br />
+                        Sa-Su 11am-10pm</p>
                     </div>
                     <div className="col social-media">
                         <ul>

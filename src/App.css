@@ -235,7 +235,8 @@ form {
 }
 fieldset {
   text-align: center;
-  background-color: #EE9972;
+  background-color: #495E57;
+  color: #EDEFEE;
   border: none;
   margin-bottom: 16px;
 }
