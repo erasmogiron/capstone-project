@@ -251,6 +251,11 @@ form p {
   position: relative;
   bottom: -110px;
 }
+sup,
+.alert {
+  color: red;
+  font-size: 18px;
+}
 
 /* Queries */
 @media screen and (min-width: 767px) {
