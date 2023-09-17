@@ -1,11 +1,11 @@
 import React from "react";
 import { useState } from "react";
+import BookingFormTimes from './BookingFormTimes';
 
-export default function Form() {
-    const availableTimes = ["17:00","18:00","19:00","20:00","21:00","22:00"];
+export default function Form(props) {
 
     const [reservationDate, setReservationDate] = useState("");
-    const [reservationTime, setReservationTime] = useState(availableTimes);
+    const [reservationTime, setReservationTime] = useState(props.availableTimes);
     const [guests, setGuests] = useState("");
     const [occasion, setOccasion] = useState("");
 
@@ -50,12 +50,7 @@ export default function Form() {
                         value={reservationTime}
                         onChange={(e) => setReservationTime(e.target.value)}
                     >
-                        <option>17:00</option>
-                        <option>18:00</option>
-                        <option>19:00</option>
-                        <option>20:00</option>
-                        <option>21:00</option>
-                        <option>22:00</option>
+                        <BookingFormTimes />
                     </select>
                     </p>
                     <p>
