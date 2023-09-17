@@ -1,56 +1,90 @@
 import React from "react";
+import { useState } from "react";
 
 export default function Form() {
+    const availableTimes = ["17:00","18:00","19:00","20:00","21:00","22:00"];
+
+    const [reservationDate, setReservationDate] = useState("");
+    const [reservationTime, setReservationTime] = useState(availableTimes);
+    const [guests, setGuests] = useState("");
+    const [occasion, setOccasion] = useState("");
+
+    const clearForm = () => {
+        setReservationDate("");
+        setReservationTime("");
+        setGuests({
+            value: "0",
+            isTouched: false,
+          });
+        setOccasion({
+          value: "Occasion",
+          isTouched: false,
+        });
+      };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        alert("Table Reserved!");
+        clearForm()
+    };
+
+
     return(
         <section className="container">
             <div className="row grid">
-                <form>
+                <form onSubmit={handleSubmit}>
                     <fieldset className="sub-title">Reservation Details</fieldset>
-                    <p><label for="date">Date</label>
-                    <input id="date" type="date" name="date" /></p>
-                    <p><label for="time">Time</label>
-                    <input id="time" type="time" name="time" /></p>
-
-                    <p><label for="guests">Guests</label>
-                    <input id="guests" type="number" name="guests"/></p>
-
-                    <p><label for="seating">Seating</label>
-                    <select id="seating" name="seating">
-                        <option value="indoor">Indoor Seating</option>
-                        <option value="outdoor">Outdoor Seating</option>
-                    </select></p>
-                    <p><label for="seating">Occasion</label>
-                    <select id="occasion" name="occasion">
-                        <option value="indoor">Birthday</option>
-                        <option value="outdoor">Engagement</option>
-                        <option value="outdoor">Anniversary</option>
-                    </select></p>
-                    <p><label for="notes">Occasion</label>
-                        <textarea name="message" rows="5" cols="auto">
-                    </textarea></p>
-
-                    <fieldset className="sub-title">About You</fieldset>
-                    <p><label for="first-name">First Name</label>
-                    <input id="first-name" type="text" name="first-name" /></p>
-                    <p><label for="last-name">Last Name</label>
-                    <input id="last-name" type="text" name="last-name" /></p>
-                    <p><label for="email">Email</label>
-                    <input id="email" type="email" /></p>
-                    <p><label for="phone">Phone<br/>(optional)</label>
-                    <input id="phone" type="tel" name="phone" /></p>
-
-                    <fieldset className="sub-title">Payment Info</fieldset>
-                    <p><label for="name-on-card">Name on Card</label>
-                    <input id="name-on-card" type="text" name="name-on-card" /></p>
-                    <p><label for="credit-card">Credit card number</label>
-                    <input type="text" id="credit-card" name="credit-card" placeholder="1111-2222-3333-4444" /></p>
-                    <p><label for="cvv-code">CVV Code</label>
-                    <input id="cvv-code" type="text" name="cvv-code" /></p>
-
-                    <p><label for="expiration-date">Expiration Date</label>
-                    <input type="text" id="expiration-date" name="expiration-date" placeholder="11/25" /></p>
-                    <p><input type="submit" value="Submit" /></p>
-
+                    <p>
+                    <label htmlFor="res-date">Choose date</label>
+                    <input
+                        type="date"
+                        id="res-date"
+                        value={reservationDate}
+                        onChange={(e) => setReservationDate(e.target.value)}
+                    />
+                    </p>
+                    <p>
+                    <label htmlFor="res-time">Choose time</label>
+                    <select
+                        id="res-time"
+                        value={reservationTime}
+                        onChange={(e) => setReservationTime(e.target.value)}
+                    >
+                        <option>17:00</option>
+                        <option>18:00</option>
+                        <option>19:00</option>
+                        <option>20:00</option>
+                        <option>21:00</option>
+                        <option>22:00</option>
+                    </select>
+                    </p>
+                    <p>
+                    <label htmlFor="guests">Number of guests</label>
+                    <input
+                        type="number"
+                        placeholder="1"
+                        min="1"
+                        max="10"
+                        id="guests"
+                        value={guests}
+                        onChange={(e) => setGuests(e.target.value)}
+                    />
+                    </p>
+                    <p>
+                    <label htmlFor="occasion">Occasion</label>
+                    <select
+                        id="occasion"
+                        value={occasion}
+                        onChange={(e) => setOccasion(e.target.value)}
+                    >
+                        <option>Birthday</option>
+                        <option>Engagement</option>
+                        <option>Anniversary</option>
+                    </select>
+                    </p>
+                    <p>
+                    <input disabled={!occasion} type="submit" value="Make Your reservation" />
+                    </p>
                 </form>
             </div>
         </section>
