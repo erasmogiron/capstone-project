@@ -1,6 +1,4 @@
 import React from "react";
-import Menu from "./Menu";
-import Specials from "./Specials";
 
 export default function Form() {
     return(

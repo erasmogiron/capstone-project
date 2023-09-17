@@ -1,12 +1,12 @@
 import Header from './Components/Header';
-import Form from './Components/Form';
+import BookingForm from './Components/BookingForm';
 import Footer from './Components/Footer';
 
 export default function ReservationsPage() {
     return(
         <>
         <Header />
-        <Form />
+        <BookingForm />
         <Footer />
         </>
     )
